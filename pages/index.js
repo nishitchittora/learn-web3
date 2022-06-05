@@ -38,11 +38,6 @@ export default function Home() {
     twitterthreadsError,
   ] = useCollection(db.collection("twitterthreads"), {});
 
-  const [blogs, blogsLoading, blogsError] = useCollection(
-    db.collection("blogs"),
-    {}
-  );
-
   console.log(books, "%%%", booksLoading);
   if (!booksLoading && books) {
     console.log(books.docs);
